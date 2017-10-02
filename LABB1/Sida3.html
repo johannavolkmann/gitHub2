@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Avancerad Webutveckling 2017 - Jon Christiansen Repetition </title>
+	<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/font-awesome-animation.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css"/>
+  	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="logo">	
+							<img src="assets/media/compass.jpg" class="img-circle" alt="LOGO">
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-6 col-md-5 col-lg-4">
+						<h1 class="header-text">Island Travel Tours</h1>			
+					</div>
+					<div class="hidden-xs hidden-sm col-md-5 col-lg-6">
+						<nav class="nav_menu">
+							<ul class="menu">
+								<li><a href="Sida1.html" class="navmenu_link"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+								<li><a href="Sida2.html" class="navmenu_link"><i class="fa fa-plane" aria-hidden="true"></i>Destinations</a></li>
+								<li><a href="Sida3.html" class="navmenu_link"><i class="fa fa-check-square-o" aria-hidden="true"></i>Booking</a></li>
+								<li><a href="Sida4.html" class="navmenu_link"><i class="fa fa-info-circle" aria-hidden="true"></i>Info</a></li>
+							</ul>
+						</nav>			
+					</div>
+					<div class="mobile_menu visible-xs visible-sm">
+						<i class="fa fa-bars"></i>
+						<i class="fa fa-time"></i>
+					</div>		
+				</div>
+			</div>
+		</header>
+		<main>
+			<div id="inner-wrapper">
+				<section class="form-content">
+					<h3>Name of the booker</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4 col-md-6 col-lg-6">
+								<form class="submit_personal.php" action="#.html" method="post">
+									<fieldset>
+										<legend>Name</legend>
+										<label><input id="first-name" placeholder="Firstname" type="text" name="first-name"></label>
+										<label><input id="last-name" placeholder="Lastname" type="text" name="last-name"></label>
+									</fieldset>
+									<fieldset>
+										<legend>Gender</legend>
+										<label>Female<input type="radio" name="gender" value="female"></label>
+										<label>Male<input type="radio" name="gender" value="male"></label>
+									</fieldset>
+									<fieldset>
+										<legend>Birthdate</legend>
+										<label><input id="datetime" type="datetime-local"></label>
+									</fieldset>
+									<fieldset>
+										<legend>Nationality</legend>
+										<label><input id="nationality" placeholder="Nationality" type="text" name="nationality"></label><br>
+										<select name="continent">
+											<option value="Europe">Europe</option>
+											<option value="Asia">Asia</option>
+											<option value="Australia">Australia</option>
+											<option value="America">Pacific Ocean</option>
+											<option value="Pacific Ocean">Indonesia</option>
+											<option value="Africa">South America</option>
+											<option value="Orienten">North America</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<legend>Contact information</legend>
+										<label><input type="e-mail" name="e-mail" placeholder="E-mail adress"></label><br>
+										<label><input type="tel" name="phone_number" placeholder="Phonenummer"></label><br>
+										<label><input type="text" name="living_adress" placeholder="Living adress"></label><br>
+										<label><input type="text" name="city_adress" placeholder="City"></label><br>
+										<label><input type="text" name="post_code" placeholder="Post Code"></label>
+										<legend>Extra information</legend>
+										<label><textarea cols=69" name="message" rows="5"></textarea></label>
+									</fieldset>
+									<button class="button" type="button" value="SAVE">Save
+									</button>
+									<hr>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form-content">
+					<h3>How many travelers</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4 col-md-6 col-lg-6">
+								<form class="travelers.php" action="#.html" method="get">
+									<fieldset>
+										<legend>Adults</legend>
+										<select name="passengers_adults">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<legend>Children</legend>
+										<select name="passengers_children">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<legend>Other information</legend>
+										<label>Allergys<input type="checkbox" name="technology" value="Allergys" checked=""></label>
+										<label>Other Sickness<input type="checkbox" name="technology" value="Sickness"></label>
+										<label>Handicap<input type="checkbox" name="technology" value="Sickness"></label>
+									</fieldset>
+									<fieldset>
+										<legend>Extra information</legend>
+										<label><textarea cols=69" name="message" rows="5"></textarea></label>
+									</fieldset>
+									<button class="button" type="button" value="SAVE">Save
+									</button>
+									<hr>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form-content">
+					<h3>Travel destination</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4 col-md-6 col-lg-6">
+								<form class="travelers.php" action="#.html" method="get">
+									<fieldset>
+										<legend>Country</legend>
+										<label><input type="text" name="country" placeholder="Destination"></label>
+									</fieldset>
+									<fieldset>
+										<legend>City of Arrival</legend>
+										<label><input type="text" name="arrival_city" placeholder="City"></label>
+									</fieldset>
+									</fieldset>
+									<fieldset>
+										<legend>Extra information</legend>
+										<label><textarea cols=69" name="message" rows="5"></textarea></label>
+									</fieldset>
+									<button class="button" type="button" value="SAVE">Save
+									</button>
+									<hr>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form-content">
+					<h3>Date of travelling</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4 col-md-6 col-lg-6">
+								<form class="departure.php" action="#.html" method="get">
+									<fieldset>
+										<legend>Select date</legend>
+										<label>Departure<br><input id="datetime_departure" type="datetime-local" name="traveldate" ></label>
+										<label>Return of Arrival<br><input id="datetime_arrival_return" type="datetime-local" name="traveldate" ></label>
+									</fieldset>
+									</fieldset>
+									<fieldset>
+										<legend>Extra information</legend>
+										<label><textarea cols=69" name="message" rows="5"></textarea></label>
+									</fieldset>
+									<button class="button" type="button" value="SAVE">Save
+									</button>						
+									<hr>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="confirm_booking">
+					<h3>Confirm booking</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+								<button class="button" type="button" value="SAVE"><span>Confirm and send booking</span>
+								</button>
+							</div>
+							<div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
+								<button form="#" class="button" type="button" value="SAVE">Just save booking!
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="aside">
+					<!--h3></h3-->
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-lg-offset-6">
+								<aside class="holiday">
+									<h3>Just a few steps away!</h3>
+									<img src="assets/media/california.jpg">
+									<img src="assets/media/pool.jpg">
+									<img src="assets/media/beach.jpg">
+								</aside>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="social-media">
+							<li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-12">
+						<p>Advanced Web Design 2017 Copyright &copy Johanna Volkmann</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
